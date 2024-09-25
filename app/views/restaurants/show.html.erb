@@ -1,5 +1,8 @@
 <h1><%= @restaurant.name %></h1>
+<p>
+  <%= link_to "Back to All Restaurants", restaurants_path, class: "btn btn-secondary" %>
+  <%= link_to "Reviews for #{@restaurant.name}", restaurant_reviews_path(@restaurant), class: "btn btn-primary" %>
+</p>
 <p><%= @restaurant.address %></p>
 <p><%= @restaurant.phone_number %></p>
 <p><%= @restaurant.category %></p>
-<p><%= link_to "back to all restaurant", restaurants_path %></p>

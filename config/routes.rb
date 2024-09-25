@@ -16,11 +16,11 @@ Rails.application.routes.draw do
   get 'restaurants', to: 'restaurants#index'
 
   # create
-  get 'restaurants/new', to: 'restaurants#new', as: :new_restaurant
+  get 'restaurants/new', to: 'restaurants#new'
   post 'restaurants', to: 'restaurants#create'
 
   # read (one)
-  get 'restaurants/:id', to: 'restaurants#show', as: :restaurant
+  get 'restaurants/:id', to: 'restaurants#show'
 
   Rails.application.routes.draw do
     resources :restaurants do

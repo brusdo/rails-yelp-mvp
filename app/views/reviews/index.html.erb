@@ -5,7 +5,7 @@
       <p>rating: <%= review.rating %></p>
       <p>content: <%= review.content %></p>
       <p>
-        <%= link_to "read more", restaurant_path(review.restaurant) %>
+        <%= link_to "Back to #{@restaurant.name}", restaurant_path(review.restaurant) %>
       </p>
     </li>
   <% end %>
